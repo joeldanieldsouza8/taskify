@@ -1,0 +1,52 @@
+/* InputField.css */
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.search-box {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 2px solid #ccc; /* Added border for definition */
+  outline: none;
+  border-radius: 5px;
+  width: calc(100% - 120px); /* Adjust width to leave space for button */
+  max-width: 300px; /* Adjust as needed */
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #2a9d8f;
+  color: white;
+  border: 2px solid #2a9d8f; /* Added to match the input field */
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px; /* Add some space between the input and button */
+  width: 100px; /* Fixed width for the button */
+}
+
+.submit-btn:hover {
+  background-color: #21867a;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-box,
+  .submit-btn {
+    width: 80%;
+    max-width: none;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+
+  .submit-btn {
+    width: 80%;
+  }
+}

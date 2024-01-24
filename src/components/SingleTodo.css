@@ -1,0 +1,64 @@
+/* SingleTodo.css */
+.single-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.single-input {
+  flex-grow: 1;
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.single-p {
+  flex-grow: 1;
+  margin-right: 10px;
+  font-size: 1rem;
+  word-break: break-all;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #a9a9a9;
+}
+
+.todos-single-btn {
+  cursor: pointer;
+  padding: 5px;
+  margin: 0 5px;
+  font-size: 1.2rem;
+  color: #333;
+  background: transparent;
+  border: none;
+}
+
+.todos-single-btn:hover {
+  color: #2a9d8f;
+}
+
+@media (max-width: 768px) {
+  .single-form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .single-input,
+  .single-p {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .todos-single-btn {
+    margin-bottom: 5px;
+  }
+}

@@ -1,0 +1,49 @@
+/* App.css */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 12px;
+}
+
+#root,
+.App {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  font-size: 2.5rem;
+  color: #2a9d8f;
+  text-align: center;
+  padding: 20px;
+  background-color: #e9c46a;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto; /* Center the heading horizontally and add some margin at the top */
+  width: 50%;
+  max-width: 600px; /* Optional: Set a max-width for large screens */
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+}
